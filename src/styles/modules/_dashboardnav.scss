@@ -1,0 +1,79 @@
+.dashboard-main {
+  & .left {
+    width: 304px;
+    // border: 2px solid blue;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 54px;
+    border-right: 1px solid #eff1f6;
+
+    & .logo {
+      margin-bottom: 44px;
+      width: 40px;
+      height: 40px;
+    }
+
+    & .group {
+      display: flex;
+      gap: 24px;
+      flex-direction: column;
+      margin-bottom: 32px;
+
+      & h2 {
+        font-family: "Söhne";
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.04em;
+        color: #4d5760;
+        text-transform: uppercase;
+      }
+
+      & .item {
+        display: flex;
+        gap: 12px;
+        cursor: pointer;
+
+        & img {
+          width: 20px;
+          height: 20px;
+        }
+
+        & p {
+          font-family: "Söhne";
+          font-size: 16px;
+          line-height: 24px;
+          color: #4d5760;
+          text-transform: capitalize;
+        }
+      }
+
+      & .active {
+        & p {
+          color: #ff5403;
+        }
+      }
+    }
+
+    & .profile {
+      margin-top: 158px;
+      display: flex;
+      align-items: center;
+
+      & .person {
+        margin-right: 12px;
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+      }
+
+      & p {
+        font-family: "Söhne";
+        font-size: 15px;
+        line-height: 16px;
+        color: #4d5760;
+        margin-right: 15px;
+      }
+    }
+  }
+}
